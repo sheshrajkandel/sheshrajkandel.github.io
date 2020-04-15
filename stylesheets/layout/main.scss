@@ -1,0 +1,177 @@
+.main {
+  display: flex;
+}
+
+.main__left {
+  width: 100%;
+  @media  screen and (min-width: 1200px) {
+    background-size: cover;
+    width: 40%;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    float: left;
+  }
+}
+
+.main__right {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+    background: $white;
+    float: right;
+  } 
+  
+}
+
+.search-container {
+  margin: 30px auto;
+  @media screen and (min-width:1200px) {
+    width: 80%;
+    margin: 30px 0;
+  }
+  @media screen and (min-width: 1700px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.search-title {
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.search-box {
+  display: flex;
+  background: $white;
+  padding: 16px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.1);
+  max-width: 500px;
+  input {
+    border: 0px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-weight: bold;
+    }
+  }
+  img {
+    margin-right: 12px; 
+    @media screen and (min-width:1200px) {
+      margin-right: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.search-box--active {
+  border: 1px solid #3f8eed;
+}
+
+.main__left-section-wrapper {
+  margin: 40px 0;
+  @media screen and (min-width: 768px) {
+    margin: 60px 0;
+  }
+  @media screen and (min-width: 1700px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.main__lpu-container {
+  display: flex;
+}
+
+.lpu-logo {
+  width: 260px;
+  height: auto;
+  background: url(../images/lpu-logo.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.section-details {
+  position: relative;
+  width: 80%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 80%;
+  }
+}
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.line {
+  background: $red;
+  height: 2px;
+  width: 64px;
+  display: inline-block;
+}
+
+.line-after {
+  margin-left: 14px;
+}
+
+.line-before {
+  margin-right: 14px;
+}
+
+.section-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  margin: 6px auto 17px;
+}
+
+.news-and-notices {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    left: 25%;
+  }
+
+  & .news__link {
+    padding: 20px;
+    border: 1px solid $black;
+    color: $black;
+    background: $white;
+    position: relative;
+    &:hover {
+      background: $yellow;
+      color: $white;
+      border: 0;
+    }
+  }
+}
+

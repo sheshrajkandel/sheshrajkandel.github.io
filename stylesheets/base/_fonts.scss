@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@font-face {
+  font-family:Messina Sans,sans-serif ;
+  font-style:normal;
+  font-weight: 400;
+  src: 
+       url('../../fonts/MessinaSansWeb-Regular.eot') format('eot'),
+       url('../../fonts/MessinaSansWeb-Regular.woff') format('woff'),
+       url('../../fonts/MessinaSansWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family:Messina Sans,sans-serif ;
+  font-style:normal;
+  font-weight: 700;
+  src: 
+       url('../../fonts/MessinaSansWeb-Bold.eot') format('eot'),
+       url('../../fonts/MessinaSansWeb-Bold.woff') format('woff'),
+       url('../../fonts/MessinaSansWeb-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family:MessinaSans,sans-serif ;
+  font-style:italic;
+  font-weight: 400;
+  src: 
+      url('../../fonts/MessinaSansWeb-RegularItalic.eot') format('eot'),
+      url('../../fonts/MessinaSansWeb-RegularItalic.woff') format('woff'),
+      url('../../fonts/MessinaSansWeb-RegularItalic.woff2') format('woff2');
+}

@@ -1,0 +1,51 @@
+.story-wrapper {
+  margin: 40px 0;
+}
+
+.story {
+  @media  screen and (min-width: 1200px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.story__details {
+  font-size: 14px;
+  color: $text-color;
+  line-height: 21px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.circle {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 100%;
+  background: url(../images/girl.png) no-repeat;
+  background-size: cover;
+}
+
+.user__name {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 6px auto;
+}
+
+
+.user__university-name {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.user__applied-course {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.user__university-address {
+  font-size: 14px;
+}

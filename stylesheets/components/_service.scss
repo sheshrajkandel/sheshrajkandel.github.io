@@ -1,0 +1,25 @@
+.services-wrapper {
+  position: relative;
+}
+
+.services-menu {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.services-menu__item {
+  margin: 0 70px 14px 0;
+}
+
+.services-menu__item-link {
+  color: $light-black;
+  font-weight: 300;
+  font-size: 16px;
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+}

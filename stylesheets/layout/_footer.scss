@@ -1,0 +1,86 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  font-size: 14px;
+}
+
+.footer-left {
+  display: none; 
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+  }
+}
+
+.footer-menu {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.footer-menu__item {
+  margin: 4px 10px 0 0;
+}
+
+.footer-menu__item-link {
+  color: $black;
+  text-decoration: underline;
+  &:hover {
+    color: #454545;
+  }
+}
+
+.footer__org-name {
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__org-address {
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer-right {
+  display: flex;
+  padding: 20px 20px;
+  background: $white;
+  align-items: center;
+}
+
+.footer-copyright {
+  width: 50%;
+  & p {
+    margin-bottom: 0;
+  }
+}
+
+.footer__menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.footer__menu {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.footer__menu-list {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__list-link {
+  color: $black;
+}

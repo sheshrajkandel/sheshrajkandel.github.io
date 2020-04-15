@@ -1,0 +1,46 @@
+.package-wrapper {
+  margin-top: 40px;
+}
+
+.package {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+
+.package__list {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    float: left;
+    padding: 16px 24px;
+   
+  }
+ 
+}
+
+.package__list-item {
+  padding: 16px 20px;
+  border: 1px solid $border-color-dark;
+  display: block;
+  min-width: 230px;
+  max-width: 330px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+    background: $yellow;
+  }
+}

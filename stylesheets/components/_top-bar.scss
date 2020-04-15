@@ -1,0 +1,64 @@
+.top-bar {
+  padding: 90px 0 20px;
+  display: flex;
+  & .custom-container {
+    @media screen and (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.top-bar__content {
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.top-bar__label {
+  a {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-right: 4px;
+    margin-left: 4px;
+    color: $black;
+    &:hover {
+      color:$light-black;
+    }
+  }
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-right: 4px;
+  color: $black;
+}
+
+.top-bar__label-title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.top-bar__counseling {
+  position: relative;
+}
+
+.top-bar__label--viber {
+  &:after {
+    content: "";
+    height: 80%;
+    width: 1px;
+    background: $black;
+    position: absolute;
+    margin-left: 5px;
+    bottom: 0;
+  }
+}

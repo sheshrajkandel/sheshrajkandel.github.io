@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button--primary {
+  background: #333333;
+  color: $white;
+  border-color: transparent;
+  &:hover {
+    outline: none;
+    // background: transparent;
+    // border: 1px solid $black;
+    background: $yellow;
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.button__appointment {
+  margin-top: 20px;
+
+  @media screen and (min-width: 992px){
+    margin-top: 0;
+  }
+  @media screen and (min-width:1200px){
+    margin-right: 36px;; 
+  }
+}
