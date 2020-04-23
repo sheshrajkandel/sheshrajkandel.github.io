@@ -11,6 +11,7 @@
     // border: 1px solid $black;
     background: $yellow;
     color: $white;
+    transform: .3s cubic-bezier(.25,.46,.45,.94),-webkit-transform .3s cubic-bezier(.25,.46,.45,.94);
   }
   &:focus {
     outline: none;
@@ -27,4 +28,23 @@
   @media screen and (min-width:1200px){
     margin-right: 36px;; 
   }
+}
+
+.btn-danger {
+  background: $red;
+  color: $white;
+}
+
+.btn-popup {
+  right: -16%;
+    position: fixed;
+    top: 50%;
+    z-index: 9;
+    transform: rotate(-90deg);
+    @media screen and (min-width: 768px) {
+      right: -8%;
+    }
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
 }

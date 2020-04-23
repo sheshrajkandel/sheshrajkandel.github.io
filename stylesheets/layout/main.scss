@@ -1,32 +1,32 @@
 .main {
-  display: flex;
-}
-
-.main__left {
-  width: 100%;
-  @media  screen and (min-width: 1200px) {
-    background-size: cover;
-    width: 40%;
-    position: fixed;
-    left: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 120px;
-    float: left;
+  @media screen and (min-width: 992px) {
+    padding-top: 138px;
   }
 }
-
-.main__right {
-  width: 100%;
-  @media screen and (min-width: 1200px) {
-    width: 60%;
-    background: $white;
-    float: right;
-  } 
-  
+.main__banner {
+  @media screen and (min-width: 992px) {
+    display: flex;
+  }
+ 
 }
+
+.main__banner-left {
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    width: 60%;
+  }
+
+}
+
+.main__banner-right {
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    width: 40%;
+  background: $blue-dark;
+  }
+ 
+}
+
 
 .search-container {
   margin: 30px auto;
@@ -49,61 +49,23 @@
   margin-bottom: 15px;
 }
 
-.search-box {
-  display: flex;
-  background: $white;
-  padding: 16px;
-  box-shadow: 0 10px 35px rgba(0,0,0,.1);
-  max-width: 500px;
-  input {
-    border: 0px;
-    width: 100%;
-    &:focus {
-      outline: none;
-    }
-    &::placeholder {
-      font-weight: bold;
-    }
-  }
-  img {
-    margin-right: 12px; 
-    @media screen and (min-width:1200px) {
-      margin-right: 40px;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.search-box--active {
-  border: 1px solid #3f8eed;
-}
-
-.main__left-section-wrapper {
-  margin: 40px 0;
-  @media screen and (min-width: 768px) {
-    margin: 60px 0;
-  }
-  @media screen and (min-width: 1700px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .main__lpu-container {
   display: flex;
+  padding: 50px 30px;
+  background: $gray;
 }
 
 .lpu-logo {
-  width: 260px;
+  width: 300px;
   height: auto;
   background: url(../images/lpu-logo.png) no-repeat;
   background-position: center;
   background-size: contain;
   position: relative;
+}
+
+.lpu__contact-btn {
+  margin-top: 20px;
 }
 
 .section-details {
@@ -139,7 +101,7 @@
 }
 
 .section-title {
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;

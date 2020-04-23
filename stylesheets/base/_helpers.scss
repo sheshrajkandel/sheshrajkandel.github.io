@@ -88,3 +88,36 @@
 .max-width-1900 {
   max-width: 1900px;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bg-light-black {
+  background: $light-black;
+}
+
+.hide-mob {
+  display: none;
+  @media screen and (min-width: 992px) {
+   display: inline-block; 
+  }
+}
+
+.show-mob {
+  display: inline-block;
+  margin-top: 0 !important;
+  @media screen and (min-width: 992px) {
+   display: none; 
+  }
+}
+
+.m-r-0 {
+  margin-right: 0 !important;
+}
+
+.modal-dialog {
+  @media screen and (min-width: 1200px) {
+    max-width: 600px;
+  }
+}

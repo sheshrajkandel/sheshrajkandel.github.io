@@ -54,8 +54,33 @@
 }
 
 .swiper-slide {
+  position: relative;
   background: transparent;
-  @media screen and(min-width: 1200px) {
-    background: $white;
+}
+
+.slider-apply-btn {
+  display: none;
+  @media screen and (min-width: 992px) {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    display: inline-block;
+  }
+  
+}
+.custom-slider--right .swiper-slide {
+  background: transparent;
+}
+.slider-content {
+  padding: 30px;
+}
+
+.custom-slider--right .swiper-button-prev,.custom-slider--right .swiper-button-next, .custom-slider--right .swiper-pagination {
+  display: none;
+}
+
+.slider-content {
+  & img {
+    width: 100%;
   }
 }

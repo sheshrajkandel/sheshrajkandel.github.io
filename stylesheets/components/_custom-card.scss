@@ -1,0 +1,184 @@
+.custom-card-wrapper {
+  margin-top: 40px;
+}
+
+.custom-card {
+  display: block;
+  margin-bottom: 40px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-bottom: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,.16);
+    transition-delay: 0s ;
+}
+@media screen and (min-width: 1200px){
+  margin-bottom: 0;
+}
+}
+
+.custom-card__img {
+  width: 100%;
+}
+.custom-card__details-wrapper {
+  padding: 20px;
+}
+
+.custom-card__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: bold;
+  padding-right: 10px;
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: $red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+  }
+}
+
+.custom-card__details {
+  margin: 10px auto;
+  font-size: 14px;
+  color: $text-gray;
+  line-height: 21px;
+}
+
+.custom-card__button {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.custom-card__date {
+  margin-bottom: 14px;
+}
+.custom-card__date-info {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.flat-card__title {
+  color: #262626;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.flat-card__details {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+
+  &.small {
+    font-size: 14px;
+  }
+  & a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $black;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $black;
+  }
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: $red-hover;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.flat-card {
+  display: block;
+  position: relative;
+  background-color: $gray;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: $yellow;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(100);
+  }
+}
+
+.flat-card:hover {
+  text-decoration: none;
+  cursor: pointer;
+  p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h3 {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.flat-card__email {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.flat-card__phone {
+  margin-bottom: 10px;
+}
