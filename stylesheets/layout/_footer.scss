@@ -72,6 +72,9 @@
 
 .footer__list-link {
   color: $white;
+  &:hover {
+    color: $white;
+  }
 }
 
 .footer__menu-title {

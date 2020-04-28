@@ -19,13 +19,8 @@
   }
 }
 
-.button__appointment {
-  margin-top: 20px;
-
-  @media screen and (min-width: 992px){
-    margin-top: 0;
-  }
-  @media screen and (min-width:1200px){
+.button__appointment {  
+@media screen and (min-width:1200px){
     margin-right: 36px;; 
   }
 }
@@ -35,16 +30,16 @@
   color: $white;
 }
 
-.btn-popup {
-  right: -16%;
+.btn-popup__wrapper {
     position: fixed;
     top: 50%;
     z-index: 9;
-    transform: rotate(-90deg);
-    @media screen and (min-width: 768px) {
-      right: -8%;
-    }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
       display: none;
+    }
+    button {
+      transform: rotate(-90deg);
+    position: relative;
+    left: -60px;
     }
 }

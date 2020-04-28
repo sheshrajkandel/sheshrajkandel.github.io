@@ -42,57 +42,117 @@
         </div>
       </div>
     </section>
-    <header class="header">
-      <div class="custom-container container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#"><img src="./images/logo.svg"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Study Abroad</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Free Counseling</a>
-                  <a class="dropdown-item" href="#">Visa Services</a>
-                  <a class="dropdown-item" href="#">Admission</a>
-                  <a class="dropdown-item" href="#">SOP/LOR</a>
-                  <a class="dropdown-item" href="#">Course Recommendation</a>
+    <div class="droopmenu-navbar custom-navbar">
+      <div class="droopmenu-inner">
+          <div class="droopmenu-header">
+              <a href="#" class="navbar-brand"><img src="./images/logo.png" class="header__logo"></a>
+              <a href="#" class="droopmenu-toggle"></a>                
+          </div><!-- droopmenu-header -->
+          <div class="droopmenu-nav">
+              <ul class="droopmenu">
+                  <li><a href="#">About</a></li>
+                  <li>
+                      <a href="#">Study Abroad</a>
+                      <ul>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Newzealand</a></li>
+                        <li><a href="#">View All</a></li>
+                      </ul>
+                  </li>                         
+                  <li>
+                    <a href="#">Services</a>
+                    <ul>
+                      <li><a href="#">Free Counseling</a></li>
+                      <li><a href="#">Visa Services</a></li>
+                      <li><a href="#">Admission</a></li>
+                      <li><a href="#">SOP/LOR</a></li>
+                      <li><a href="#">Course Recommendation</a></li>
+                    </ul>
+                </li>   
+                  
+                  <li><a href="#">Universities</a>
+                      <ul class="droopmenu-grid droopmenu-grid-6">
+                          <li class="droopmenu-tabs droopmenu-tabs-vertical">
+                          
+                            <!-- TAB ONE -->
+                              <div class="droopmenu-tabsection">
+                                  <a class="droopmenu-tabheader"> By Country</a>
+                                  <div class="droopmenu-tabcontent">
+                                      <div class="droopmenu-row">
+                                          <ul class="droopmenu-col droopmenu-col6">
+                                            <li><a href="#">India</a></li>
+                                            <li><a href="#">Australia</a></li>
+                                            <li><a href="#">Newzealand</a></li>
+                                            <li><a href="#">View All</a></li>
+                                          </ul>
+                                      </div><!-- droopmenu-row -->
+                                  </div><!-- droopmenu-tabcontent -->
+                              </div><!-- droopmenu-tabsection -->
+                              
+                              <!-- TAB TWO -->
+                              <div class="droopmenu-tabsection">
+                                <a class="droopmenu-tabheader"> By Course</a>
+                                  <div class="droopmenu-tabcontent">
+                                      <div class="droopmenu-row">
+                                        <ul class="droopmenu-col droopmenu-col6">
+                                          <li><a href="#">India</a></li>
+                                          <li><a href="#">Australia</a></li>
+                                          <li><a href="#">Newzealand</a></li>
+                                          <li><a href="#">View All</a></li>
+                                      </ul>
+                                      </div><!-- droopmenu-row -->                                                       
+                                  </div><!-- droopmenu-tabcontent -->
+                              </div><!-- droopmenu-tabsection -->
+                              
+                              <!-- TAB THREE -->
+                              <div class="droopmenu-tabsection">
+                                  <a class="droopmenu-tabheader">By Scholarship</a>
+                                  <div class="droopmenu-tabcontent">
+                                      <div class="droopmenu-row">
+                                         
+                                            <ul class="droopmenu-col droopmenu-col6">
+                                      
+                                              <li><a href="#">India</a></li>
+                                              <li><a href="#">Australia</a></li>
+                                              <li><a href="#">Newzealand</a></li>
+                                              <li><a href="#">View All</a></li>
+                                          
+                                          </ul>
+                                      </div><!-- droopmenu-row -->                                                             
+                                  </div><!-- droopmenu-tabcontent -->
+                              </div><!-- droopmenu-section -->
+                          </li><!-- droopmenu-tabs vertical -->
+                      </ul><!-- droopmenu-grid -->
+                  </li>
+                  <li>
+                    <a href="#">Tranings</a>
+                    <ul>
+                      <li><a href="#">IELTS</a></li>
+                      <li><a href="#">TOFEL</a></li>
+                      <li><a href="#">PTE</a></li>
+                    </ul>
+                </li>   
+                <li>
+                  <a href="#">News & Stories</a>
+              </li>   
+                            
+              </ul>
+          </div><!-- droopmenu-nav -->
+          <div class="droopmenu-extra">
+            <ul class="droopmenu">  
+             
+                <a href="#" class="btn button--primary button__appointment  droopmenu-button" type="submit">Get Appointment</a href="#">                
+              <li>
+                <div class="header__search search" id="search">
+                  <a href="#"> <img src="./images/search.svg" alt="Search"></a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Universities</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Trainings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News & Notices</a>
-              </li>
-
-            </ul>
-            <a href="#" class="btn button--primary button__appointment hide-mob" type="submit">Get Appointment</a href="#">
-          </div>
-          <div class="header__search search" id="search">
-            <a href="#"> <img src="./images/search.svg" alt="Search"></a>
-          </div>
-        </nav>
-        <div>
-
-    </header>
+          </ul>
+          </div><!-- droopmenu-extra -->
+      </div><!-- droopmenu-inner -->
+  </div>
+    
   </div>
   <div class="search__container" id="search-container">
     <div class="close__search" id="close-search">
@@ -108,9 +168,12 @@
     </div>
   </div>
 <!-- Button trigger modal -->
-<button type="button" class="btn button--primary btn-popup" data-toggle="modal" data-target="#appointmentModal">
-  Get Appointment
-</button>
+<div class="btn-popup__wrapper">
+  <button type="button" class="btn button--primary btn-popup" data-toggle="modal" data-target="#appointmentModal">
+    Get Appointment
+  </button>
+</div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel" aria-hidden="true">
@@ -177,10 +240,6 @@
             </div>
           </form>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="button" class="btn button--primary btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -254,7 +313,7 @@
          
         </div>
         <div class="destination-wrapper row">
-          <div class="col-sm-12 col-md-6 col-lg-4 ">
+          <div class="col-sm-12 col-md-6 col-lg-3 ">
             <div class="destination">
               <img src="./images/india.jpg" alt="destination-image" class="destination__img">
               <div class="destination__details-wrapper">
@@ -271,7 +330,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4 ">
+          <div class="col-sm-12 col-md-6 col-lg-3 ">
             <div class="destination">
               <img src="./images/australia.jpg" alt="destination-image" class="destination__img">
               <div class="destination__details-wrapper">
@@ -288,7 +347,24 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4 ">
+          <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div class="destination">
+              <img src="./images/newzealand.jpg" alt="destination-image" class="destination__img">
+              <div class="destination__details-wrapper">
+                <a class="destination__title" href="#">
+                  NEWZEALAND
+                </a>
+                <p class="destination__details">
+                  Lorem ipsum dolor sit amet, consect adipiscing elit, sed
+                  do eiusmod
+                  tempor incididunt labore.
+                  Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor...
+                </p>
+                <a href="#" class="btn button--primary destination__button">Enquiry Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 ">
             <div class="destination">
               <img src="./images/newzealand.jpg" alt="destination-image" class="destination__img">
               <div class="destination__details-wrapper">
@@ -900,6 +976,20 @@
     })
 
   </script>
+ <script type="text/javascript" src="js/drop-menu/jquery.min.js"></script>
+ <script type="text/javascript" src="js/drop-menu/droopmenu.js"></script>
+<script type="text/javascript">
+
+/*	--------------------------------------------------
+:: Initialize menu
+-------------------------------------------------- */
+jQuery(function($){
+ $('.droopmenu-navbar').droopmenu({
+   dmArrow:false
+ });
+});
+
+ </script>       
 </body>
 
 </html>
