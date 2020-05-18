@@ -24,8 +24,14 @@
   overflow: hidden;
   margin: 20px auto;
   border-radius: 100%;
-  background: url(../images/girl.png) no-repeat;
-  background-size: cover;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.circle--no-margin {
+  margin: 14px 0
 }
 
 .user__name {

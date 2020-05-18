@@ -1,0 +1,47 @@
+.niche-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../images/niche-ellipse.svg") no-repeat;
+  padding: 36px 42px;
+  box-shadow: 4px 4px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-position: 190px;
+  background-size: cover;
+  cursor: pointer;
+  margin: 20px auto;
+  &:hover {
+    background-color: $gray;
+  }
+
+  @media screen and (min-width: 1200px){
+    margin: 0;
+  }
+}
+
+.niche-card__icon {
+  img {
+    height: 60px;
+  }
+}
+
+.niche__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+.niche__counter {
+  font-size: 18px;
+  font-weight: bold;
+  color: $red;
+}
+
+.niche-row {
+  @media screen and (min-width: 992px) {
+    margin: 60px auto;
+  }
+  
+}
