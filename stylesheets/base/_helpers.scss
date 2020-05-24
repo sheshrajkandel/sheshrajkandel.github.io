@@ -7,7 +7,7 @@
  */
 .clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -29,7 +29,7 @@
   }
 }
 
- /**
+/**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
@@ -100,7 +100,7 @@
 .hide-mob {
   display: none;
   @media screen and (min-width: 992px) {
-   display: inline-block; 
+    display: inline-block;
   }
 }
 
@@ -108,7 +108,7 @@
   display: inline-block;
   margin-top: 0 !important;
   @media screen and (min-width: 992px) {
-   display: none; 
+    display: none;
   }
 }
 
@@ -116,16 +116,14 @@
   margin-right: 0 !important;
 }
 
-
 .modal-open {
   padding-right: 0 !important;
   overflow-y: scroll;
 }
 
-
 .modal-dialog {
   @media screen and (min-width: 1200px) {
-    max-width: 700px;
+    max-width: 600px;
     padding: 20px;
   }
 }
@@ -141,7 +139,6 @@
     }
   }
 }
-
 
 .mt-10 {
   margin-top: 10px;
@@ -159,3 +156,39 @@
   margin-left: 20px;
 }
 
+.title-2 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  display: block;
+  font-weight: bold;
+
+  @media screen and (min-width: 992px) {
+    display: inline-block;
+    font-size: 24px;
+    border-bottom: 2px solid $red;
+  }
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.content-details {
+  color: $text-gray;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.text-gray {
+  color: $text-gray;
+}
+
+p {
+  text-align: justify ;
+}

@@ -43,3 +43,19 @@
     left: -60px;
     }
 }
+
+.button--lg {
+  min-height: 56px;
+  min-width: 170px;
+  font-size: 18px;
+}
+
+.button--secondary {
+  background: $yellow;
+  color: $white;
+  &:hover {
+    background: $black;
+    color: $white;
+    transform: .3s cubic-bezier(.25,.46,.45,.94),-webkit-transform .3s cubic-bezier(.25,.46,.45,.94);
+  }
+}

@@ -46,6 +46,17 @@
     }
 }
 
+.search__input--md {
+  border: 2px solid $text-gray;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 100%;
+  max-width: 600px;
+  @media screen and (min-width: 992px) {
+    margin-right: 24px;
+  }
+}
+
 .search__label {
   text-align: center;
   font-size: 16px;
@@ -70,4 +81,16 @@
       background-color: $red;
       border-color: $red;
     }
+}
+
+.search-form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search-form-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 16px;
 }

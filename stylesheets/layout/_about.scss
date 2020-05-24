@@ -111,7 +111,7 @@
   margin: 10px auto;
   color: $black;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -177,11 +177,7 @@
 .user {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  @media screen and (min-width: 992px) {
-    flex-direction: row;
-  }
-  
+  flex-direction: column;  
 }
 
 .user__details {
@@ -256,7 +252,7 @@
   line-height: 26px;
   text-align: center;
   @media screen and (min-width: 992px) {
-    text-align: left;
+    text-align: justify;
   }
 }
 
