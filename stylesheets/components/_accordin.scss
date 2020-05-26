@@ -1,0 +1,49 @@
+.accordion .card-header:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067";
+}
+
+.custom-card--faq {
+  margin-bottom: 30px;
+  background: $white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+ 
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.custom-card--faq {
+  & .card-header {
+    background: $white;
+    border: 0;
+    font-weight: bold;
+    font-size: 16px;
+
+    @media screen and (min-width: 992px) {
+      font-size: 24px;
+    }
+  & .card-title {
+      max-width: 270px;
+      display: inline-block;
+
+      @media screen and (min-width: 480px) {
+       display: inline;
+       max-width: 100%;
+      }
+  }
+
+  }
+
+  & .card-body {
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-gray;
+  }
+}
