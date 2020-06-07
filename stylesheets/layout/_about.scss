@@ -332,3 +332,14 @@ max-width: 450px;
     color: $black;
   }
 }
+
+.rect {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  border-radius: 0;
+
+  & img {
+    width: 100%;
+  }
+}

@@ -23,6 +23,7 @@
 @import
   'layout/header',
   'layout/main',
+  'layout/lpu',
   'layout/about',
   'layout/niche',
   'layout/newsletter',
@@ -46,7 +47,8 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/study-abroad';
+  'pages/study-abroad',
+  'pages/search-result';
 
 // 7. Themes
 @import

@@ -5219,6 +5219,100 @@ p {
       color: #ffffff;
       border: 0; }
 
+.lpubanner {
+  background-image: url("../images/lpu/banner/s4.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 500px; }
+  .lpubanner .applysection {
+    position: absolute;
+    top: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 60px 100px 60px 40px;
+    color: #e37d22;
+    font-weight: 600; }
+    .lpubanner .applysection__maintitle {
+      font-size: 24px;
+      margin-bottom: 12px;
+      margin-top: 0px; }
+    .lpubanner .applysection__subtitle {
+      color: #ffffff;
+      font-size: 20px;
+      margin-bottom: 12px; }
+    .lpubanner .applysection__caption {
+      font-size: 20px;
+      margin-bottom: 12px; }
+
+.heading-block {
+  text-align: center;
+  margin-bottom: 30px; }
+  .heading-block__title {
+    color: #333333;
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 400; }
+  .heading-block__caption {
+    color: #6C757D;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 300; }
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section .custom-card-wrapper .custom-card {
+    margin-bottom: 40px; } }
+
+.placements-section .info p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center; }
+
+.placements-section .custom-card__details-wrapper {
+  text-align: center; }
+  .placements-section .custom-card__details-wrapper .custom-card__title {
+    font-weight: 500;
+    border: none; }
+
+.visitors-section .custom-card .custom-card__details-wrapper {
+  padding: 15px 20px; }
+  .visitors-section .custom-card .custom-card__details-wrapper .custom-card__title {
+    font-weight: 500;
+    border: none; }
+  .visitors-section .custom-card .custom-card__details-wrapper .custom-card__details {
+    color: #e37d22;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px; }
+
+.programmes-offered-section .programme-column__title {
+  font-size: 14px; }
+
+.programmes-offered-section .programme-column__list {
+  font-size: 12px;
+  padding: 0px; }
+
+.programmes-offered-section .programme-column__list-item {
+  padding: 5px 0px;
+  background: url("../images/lpu/icons/double-right.svg") no-repeat;
+  background-position: left center;
+  background-size: 10px; }
+  .programmes-offered-section .programme-column__list-item a {
+    margin-left: 15px;
+    color: #e37d22; }
+
+@media only screen and (max-width: 768px) {
+  .programmes-offered-section .programmes-first-half {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+
+.programmes-offered-section .programme-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  @media only screen and (min-width: 1300px) {
+    .programmes-offered-section .programme-row {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); } }
+
 .about__banner {
   background: #f4fbff;
   padding: 40px 0; }
@@ -5489,6 +5583,14 @@ p {
 .yaxis-details-list li {
   color: #000000; }
 
+.rect {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  border-radius: 0; }
+  .rect img {
+    width: 100%; }
+
 .niche-card {
   display: flex;
   justify-content: space-between;
@@ -5687,13 +5789,20 @@ p {
   min-width: 170px;
   font-size: 18px; }
 
-.button--secondary {
+.button--secondary, .lpubanner .applysection__button {
   background: #e37d22;
   color: #ffffff; }
-  .button--secondary:hover {
+  .button--secondary:hover, .lpubanner .applysection__button:hover {
     background: #000000;
     color: #ffffff;
     transform: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+.button--rounded {
+  font-size: 14px;
+  padding: 12px 24px;
+  color: #ffffff;
+  border-radius: 30px;
+  background: #e37d22; }
 
 .top-bar {
   padding: 10px 0 10px;
@@ -6356,6 +6465,37 @@ p {
   display: flex;
   justify-content: space-between; }
 
+.info-card {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; }
+  .info-card__body {
+    display: grid;
+    grid-template-columns: 1fr; }
+    @media only screen and (min-width: 992px) {
+      .info-card__body {
+        grid-template-columns: 1fr 1fr; } }
+  .info-card__details-wrapper {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .info-card__title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #000000; }
+  .info-card__details {
+    font-size: 21px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.5; }
+  .info-card__img img {
+    width: 100%;
+    object-fit: cover;
+    height: 270px; }
+    @media screen and (min-width: 992px) {
+      .info-card__img img {
+        height: 100%; } }
+
 .search__container {
   background: black;
   position: fixed;
@@ -6513,3 +6653,52 @@ p {
   @media screen and (min-width: 992px) {
     .why-chose-inner-row {
       flex-direction: row; } }
+
+.search-banner {
+  min-height: 126px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.search-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 20px; }
+  @media screen and (min-width: 992px) {
+    .search-card {
+      flex-direction: row; } }
+  .search-card:hover {
+    background: #F4F5F5; }
+  .search-card__no-effect:hover {
+    background: #ffffff; }
+  .search-card__icon {
+    width: 66px;
+    height: 66px; }
+  .search-card__results {
+    margin: 12px auto;
+    width: 100%; }
+    @media screen and (min-width: 992px) {
+      .search-card__results {
+        margin: 0 30px;
+        width: calc(100% - 250px); } }
+  .search-card__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #183379;
+    text-decoration: underline;
+    text-transform: capitalize; }
+  .search-card__details {
+    font-size: 16px;
+    color: #6C757D;
+    line-height: 24px; }
+  .search-card__link {
+    color: #183379;
+    font-size: 18px;
+    font-weight: bold; }

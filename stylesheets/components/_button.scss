@@ -59,3 +59,11 @@
     transform: .3s cubic-bezier(.25,.46,.45,.94),-webkit-transform .3s cubic-bezier(.25,.46,.45,.94);
   }
 }
+
+.button--rounded {
+  font-size: 14px;
+  padding: 12px 24px;
+  color: $white;
+  border-radius: 30px;
+  background: $yellow;
+}
