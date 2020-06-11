@@ -5245,18 +5245,30 @@ p {
 
 .heading-block {
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
+.heading-block__title {
+  color: #333333;
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
   .heading-block__title {
-    color: #333333;
-    font-size: 36px;
-    letter-spacing: 1px;
-    font-weight: 400; }
-  .heading-block__caption {
-    color: #6C757D;
-    font-size: 18px;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 300; }
+    font-size: 26px;
+  }
+}
+.heading-block__title-icon {
+  height: 35px;
+  vertical-align: initial;
+}
+.heading-block__caption {
+  color: #6C757D;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 300;
+}
 
 @media screen and (min-width: 1200px) {
   .portfolio-section .custom-card-wrapper .custom-card {
@@ -5269,21 +5281,25 @@ p {
   text-align: center; }
 
 .placements-section .custom-card__details-wrapper {
-  text-align: center; }
-  .placements-section .custom-card__details-wrapper .custom-card__title {
-    font-weight: 500;
-    border: none; }
+  text-align: center;
+}
+.placements-section .custom-card__details-wrapper .custom-card__title {
+  font-weight: 500;
+}
 
 .visitors-section .custom-card .custom-card__details-wrapper {
-  padding: 15px 20px; }
-  .visitors-section .custom-card .custom-card__details-wrapper .custom-card__title {
-    font-weight: 500;
-    border: none; }
-  .visitors-section .custom-card .custom-card__details-wrapper .custom-card__details {
-    color: #e37d22;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0px; }
+  padding: 15px 20px;
+}
+.visitors-section .custom-card .custom-card__details-wrapper .custom-card__title {
+  font-weight: 500;
+}
+.visitors-section .custom-card .custom-card__details-wrapper .custom-card__details {
+  color: #e37d22;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+}
+
 
 .programmes-offered-section .programme-column__title {
   font-size: 14px; }
@@ -5296,12 +5312,13 @@ p {
   padding: 5px 0px;
   background: url("../images/lpu/icons/double-right.svg") no-repeat;
   background-position: left center;
-  background-size: 10px; }
-  .programmes-offered-section .programme-column__list-item a {
-    margin-left: 15px;
-    color: #e37d22; }
-
-@media only screen and (max-width: 768px) {
+  background-size: 10px;
+}
+.programmes-offered-section .programme-column__list-item a {
+  margin-left: 15px;
+  color: #e37d22;
+}
+@media only screen and (max-width: 992px) {
   .programmes-offered-section .programmes-first-half {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
@@ -5312,6 +5329,15 @@ p {
   @media only screen and (min-width: 1300px) {
     .programmes-offered-section .programme-row {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); } }
+
+.object-fit-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+.list-styled {
+  list-style: disc;
+}
 
 .about__banner {
   background: #f4fbff;
@@ -6464,6 +6490,15 @@ p {
   border-radius: 8px;
   display: flex;
   justify-content: space-between; }
+
+.no-underline {
+  border: none;
+}
+
+.no-hover {
+  pointer-events: none;
+  cursor: default;
+}
 
 .info-card {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
